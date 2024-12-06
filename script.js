@@ -1,3 +1,31 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const timeElement = document.getElementById("current-time");
+
+  function updateTime() {
+    const now = new Date();
+    const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+    const timeString = now.toLocaleTimeString('en-US', options);
+    const dateString = now.toLocaleDateString();
+    timeElement.textContent = ${dateString} ${timeString};
+    setTimeout(updateTime, 1000);
+  }
+
+  updateTime();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Hamburger Menu Toggle
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const navLinks = document.getElementById("nav-links");
