@@ -10,7 +10,106 @@ body {
   background-color: white;
   color: black;
 }
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
+.top-bar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.top-bar .time-container {
+  font-size: 14px;
+  flex: 1 1 auto;
+}
+
+.top-bar .contact-info {
+  font-size: 14px;
+  display: flex;
+  gap: 20px;
+  flex: 1 1 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.top-bar .links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.top-bar .links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.top-bar .language-switch button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.top-bar .language-switch button:hover {
+  background-color: #555;
+}
+
+/* Responsiveness for Tablets and Smaller Devices */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info {
+    justify-content: center;
+    margin: 5px 0;
+  }
+
+  .links {
+    justify-content: center;
+  }
+
+  .links a {
+    font-size: 12px;
+  }
+
+  .language-switch button {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+
+/* Responsiveness for Larger Screens (Laptops and Desktops) */
+@media (min-width: 769px) {
+  .top-bar {
+    flex-direction: row;
+  }
+
+  .links a {
+    font-size: 14px;
+  }
+
+  .language-switch button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
 /* Top Header Section */
 .top-header {
   display: flex;
