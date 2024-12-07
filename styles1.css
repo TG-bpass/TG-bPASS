@@ -167,7 +167,7 @@ body {
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 10px 20px;
 }
@@ -185,10 +185,7 @@ body {
   border-radius: 5px;
 }
 
-.nav-links a:hover {
-  
- 
-}
+
 
 .hamburger-menu {
   display: none;
